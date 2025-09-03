@@ -9,8 +9,8 @@ class Ultrasonic {
     int echoPin;
 
   public:
-    Ultrasonic(int trig, int echo); // constructor
-    float measure();                // return distance in cm (float)
+    Ultrasonic(int trig, int echo); 
+    float measure();               
 };
 
 #endif
