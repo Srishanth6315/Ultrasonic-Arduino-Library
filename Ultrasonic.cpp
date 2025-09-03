@@ -14,8 +14,8 @@ float Ultrasonic::measure() {
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
 
-  long duration = pulseIn(echoPin, HIGH, 30000); // 30ms timeout
-  if (duration == 0) return -1; // no echo detected
+  long duration = pulseIn(echoPin, HIGH); 
+  if (duration == 0) return -1; 
 
-  return (duration * 0.0343) / 2.0; // distance in cm with decimals
+  return (duration * 0.0343) / 2.0; 
 }
